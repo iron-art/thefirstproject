@@ -14,7 +14,7 @@ weather_token = os.getenv('WTHR_TOKEN')
 
 def safe_me(func):
     def secure_me(message):
-        if message.from_user.id not in [int(os.getenv('MY_TG_ID')), int(os.getenv('SCND_TG_ID'))]:
+        if message.from_user.id not in [int(os.getenv('USER_ID')), int(os.getenv('SCND_USER_ID'))]:
             return bot.send_message(message.chat.id, 'Я тебя не знаю')
         return func(message)
     return secure_me
