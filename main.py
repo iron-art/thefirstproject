@@ -1,5 +1,3 @@
-# Рабочий код без ошибок
-# Я из будущего, не ломай и не порть его, пожалуйста
 import telebot
 import time
 import requests
